@@ -58,8 +58,8 @@ Utility to run multiple business rules in a chain and return first failure:
 ```csharp
 var result = BusinessRules.Run(rule1, rule2);
 if (result != null)
-    return result;
-
+    return result; 
+```
 ### 🧪 Reusability
 This layer is designed to be domain-agnostic, meaning:
 
@@ -74,7 +74,7 @@ Uses Microsoft.Extensions.Configuration for binding
 
 Uses System.IdentityModel.Tokens.Jwt for token handling
 
-📄 Related Files to Review
+### 📄 Related Files to Review
 File	Purpose
 JwtHelper.cs	Generates JWT tokens based on user & claims
 ClaimExtensions.cs	Adds custom claims for identity handling
