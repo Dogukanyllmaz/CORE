@@ -138,3 +138,29 @@ ClaimExtensions.cs	Adds custom claims for identity handling
 BusinessRules.cs	Simplifies handling multiple rule checks
 IResult.cs, IDataResult<T>.cs	Standard return pattern for methods
 
+
+###📦 NuGet Packages Used
+Microsoft.Extensions.Configuration
+
+- Microsoft.Extensions.Configuration.Binder (for .Get<T>() binding)
+
+- System.IdentityModel.Tokens.Jwt
+
+- Microsoft.IdentityModel.Tokens
+
+- Castle.Core (for DynamicProxy / interceptors)
+
+- FluentValidation (if validation aspects used)
+
+- Microsoft.Extensions.Caching.Memory (if caching implemented)
+
+```
+dotnet add package Microsoft.Extensions.Configuration
+dotnet add package Microsoft.Extensions.Configuration.Binder
+dotnet add package System.IdentityModel.Tokens.Jwt
+dotnet add package Microsoft.IdentityModel.Tokens
+dotnet add package Castle.Core
+dotnet add package FluentValidation
+dotnet add package Microsoft.Extensions.Caching.Memory
+
+```
