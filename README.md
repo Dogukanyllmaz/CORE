@@ -139,7 +139,7 @@ BusinessRules.cs	Simplifies handling multiple rule checks
 IResult.cs, IDataResult<T>.cs	Standard return pattern for methods
 
 
-###📦 NuGet Packages Used
+### 📦 NuGet Packages Used
 Microsoft.Extensions.Configuration
 
 - Microsoft.Extensions.Configuration.Binder (for .Get<T>() binding)
