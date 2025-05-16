@@ -15,39 +15,73 @@ The `Core` layer is designed based on the **Clean Architecture** and **Onion Arc
 ## 📁 Folder Structure
 
 Core/
+
 │
-├── CrossCuttingConcerns/ # Concerns like caching, logging, validation, etc.
-│ ├── Caching/ # Caching mechanisms (e.g., memory cache interfaces)
-│ ├── Logging/ # Logging interfaces or implementations
-│ └── Validation/ # FluentValidation integrations
+
+├── CrossCuttingConcerns/ # Concerns like caching, logging, validation, etc. 
+
+│ ├── Caching/ # Caching mechanisms (e.g., memory cache interfaces) 
+
+│ ├── Logging/ # Logging interfaces or implementations 
+
+│ └── Validation/ # FluentValidation integrations 
+
 │
-├── Entities/ # Base entities and marker interfaces
-│ ├── Concrete/ # User, OperationClaim, UserOperationClaim, etc.
-│ └── Abstract/ # IEntity, IDto marker interfaces
+
+├── Entities/ # Base entities and marker interfaces 
+
+│ ├── Concrete/ # User, OperationClaim, UserOperationClaim, etc. 
+
+│ └── Abstract/ # IEntity, IDto marker interfaces 
+
 │
-├── Extensions/ # Extension methods
-│ └── ClaimsPrincipalExtensions.cs # Custom claim extensions for identity
+
+├── Extensions/ # Extension methods 
+
+│ └── ClaimsPrincipalExtensions.cs # Custom claim extensions for identity 
+
 │
-├── Utilities/
-│ ├── Business/ # BusinessRules class to run multiple rules
-│ │ └── BusinessRules.cs
+
+├── Utilities/ 
+
+│ ├── Business/ # BusinessRules class to run multiple rules 
+
+│ │ └── BusinessRules.cs 
+
 │ │
-│ ├── Interceptors/ # AOP using Castle DynamicProxy
+
+│ ├── Interceptors/ # AOP using Castle DynamicProxy 
+
 │ │ ├── MethodInterception.cs
-│ │ └── Aspect attributes (ValidationAspect, etc.)
+
+│ │ └── Aspect attributes (ValidationAspect, etc.) 
+
 │ │
+
 │ ├── Results/ # Standardized method result classes
+
 │ │ ├── IResult.cs
+
 │ │ ├── SuccessResult.cs
+
 │ │ └── ErrorResult.cs
+
 │ │
+
 │ └── Security/
+
 │ ├── Encryption/ # Hashing helpers
+
 │ │ ├── HashingHelper.cs
+
 │ │ └── SecurityKeyHelper.cs
+
 │ │
+
 │ └── Jwt/ # JWT generation and token handling
+
 │ ├── JwtHelper.cs
+
 │ └── TokenOptions.cs
 
 
