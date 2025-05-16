@@ -1,6 +1,6 @@
 # CORE
 
-This folder contains the **infrastructure-level and reusable components** of the RentACar project. It provides **base functionality** that can be used across different layers of the application, and even reused in other projects without any modification.
+This folder contains the **infrastructure-level and reusable components** of the project. It provides **base functionality** that can be used across different layers of the application, and even reused in other projects without any modification.
 
 ## 🧱 Purpose
 
